@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nav</title>
+        <style>
+            html, body {
+                margin: 0;
+                height: 100%;
+            }
+            
+            .menu {
+                display: flex;
+                background-color: rgb(33, 192, 252);
+                border-top: 1px solid rgb(27, 166, 218);
+                flex-wrap: wrap;
+            }
+
+            .menu > span {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                font-size: x-large;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 10px;
+                width: 100%;
+                align-items: center;
+            }
+
+            .menu > span:hover {
+                background-color: #03A9F4;
+                border-radius: 5px;
+            }
+
+            @media only screen and (min-width: 600px) {
+                .menu {
+                    flex-wrap: nowrap;
+                    height: 10%;
+                }
+
+                .menu > span {
+                    flex-direction: row;
+                    align-self: center;
+                    justify-content: center;
+                }
+                
+            }
+
+            @media only screen and (min-width: 768px) {
+                .menu {
+                    flex-wrap: nowrap;
+                    justify-content: flex-end;
+                }
+
+                .menu > span {
+                    width: auto;
+                    margin: auto 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <span>Home</span>
+            <span>About</span>
+            <span>Products</span>
+            <span>Contact</span>
+        </div>
+    </body>
+</html>

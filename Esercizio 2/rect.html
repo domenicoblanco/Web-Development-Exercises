@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frames</title>
+        <style>
+            html, body{
+                height: 100%;
+            }
+            .container {
+                display: inline-flex;
+                position: relative;
+                padding: 10px;
+            }
+
+            .corner {
+                position: absolute;
+                width: 1vw;
+                height: 1vw;
+                border: 1px solid red;
+                padding: 5px;
+            }
+
+            .squareTL {
+                top: 0px;
+                left: 0px;
+                border-bottom: 0px;
+                border-right: 0px;
+            }
+            
+            .squareTR {
+                top: 0px;
+                right: 0px;
+                border-bottom: 0px;
+                border-left: 0px;
+            }
+
+            .squareBL {
+                bottom: 0px;
+                left: 0px;
+                border-top: 0px;
+                border-right: 0px;
+            }
+
+            .squareBR {
+                bottom: 0px;
+                right: 0px;
+                border-top: 0px;
+                border-left: 0px;
+            }
+
+            .rect {
+                display: inline-flex;
+                position: relative;
+                padding: 5px;
+                border: 1px solid black;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="corner squareTL"></div>
+            <div class="corner squareTR"></div>
+            <div class="corner squareBL"></div>
+            <div class="corner squareBR"></div>
+            <div class="rect">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae. Velit aliquet sagittis id consectetur purus. Sed id semper risus in. Orci ac auctor augue mauris augue neque gravida in fermentum. Tristique senectus et netus et malesuada fames ac turpis egestas. Neque ornare aenean euismod elementum nisi. At erat pellentesque adipiscing commodo elit. Nibh praesent tristique magna sit amet purus gravida quis. Nunc faucibus a pellentesque sit. Iaculis urna id volutpat lacus laoreet non curabitur.</p>
+            </div>
+        </div>
+    </body>
+</html>

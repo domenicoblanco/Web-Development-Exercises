@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="Unicode">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Console</title>
+        <style>
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                color: white;
+                font-family: monospace;
+                background: url("jammy-jellyfish.webp") no-repeat center center;
+                background-size: cover;
+            }
+
+            .terminal-container {
+                display: grid;
+                width: 80%;
+                height: 100%;
+            }
+
+            .topbar {
+                margin-top: auto;
+                display: inline-flex;
+                width: 100%;
+                height: 25px;
+                background: #18191a;
+                border: 1px solid transparent;
+                border-radius: 5px 5px 0 0;
+                padding: 5px;
+            }
+
+            .buttons-container {
+                display: inline-flex;
+                position: absolute;
+            }
+
+            .topbar > .buttons-container > .btn {
+                display: block;
+                margin: 5px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                text-align: center;
+            }
+            
+            .close-btn {
+                background: rgb(252, 96, 91);
+                color: rgb(252, 96, 91);
+            }
+
+            .reduce-btn {
+                background: rgb(252, 187, 64);
+                color: rgb(252, 187, 64);
+            }
+
+            .resize-btn {
+                background: rgb(50, 196, 71);
+                color: rgb(50, 196, 71);
+            }
+
+            .close-btn:hover, .reduce-btn:hover, .resize-btn:hover {
+                color: white;
+            }
+
+            .terminal-body {
+                display: block;
+                width: 100%;
+                height: 40vh;
+                background-color: rgb(15, 16, 17, 0.7);
+                border: 1px solid transparent;
+                border-radius: 0 0 5px 5px;
+                padding: 5px;
+                overflow-y: auto;
+            }
+
+            .terminal-body > span[contenteditable="true"] {
+                margin-left: 5px;
+                outline: none;
+            }
+
+            .margin-auto {
+                margin: auto;
+            }
+
+            .text-teal {
+                color: teal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="terminal-container margin-auto">
+            <div class="topbar">
+                <div class="buttons-container">
+                    <span class="btn close-btn">×</span>
+                    <span class="btn reduce-btn">—</span>
+                    <span class="btn resize-btn">⤡</span>
+                </div>
+                <span class="margin-auto">d.blanco@web-development:~</span>
+            </div>
+            <div class="terminal-body">
+                <span class="text-teal">d.blanco@web-development:~$ </span>
+                <span contenteditable="true" class="margin-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ea illo optio dolore, consequuntur placeat! Suscipit ipsam molestias, doloribus veniam illo voluptatibus molestiae sint quam totam officiis, perferendis, fuga eaque.</span>
+            </div>
+        </div>
+    </body>
+</html>

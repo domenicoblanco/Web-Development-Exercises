@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            html, body {
+                height: 100%;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            body {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: 60px auto 60px;
+                grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
+                gap: 20px;
+            }
+            
+            hero, footer {
+                display: grid;
+                background-color: rgb(207, 232, 220);
+                border: 3px solid rgb(133, 188, 198);
+                border-radius: 5px;
+                align-items: center;
+                padding-left: 15px;
+            }
+
+            hero {
+                grid-area: header;
+                margin-top: 10px;
+            }
+
+            sidebar {
+                grid-area: sidebar;
+                border-right: 2px solid gray;
+            }
+
+            content {
+                grid-area: main;
+            }
+
+            footer {
+                margin-bottom: 10px;
+                grid-area: footer;
+            }
+        </style>
+    </head>
+    <body>
+        <hero>
+            <span>This is my lovely blog</span>
+        </hero>
+        <sidebar>
+            <h2>Other things</h2>
+            <p>Nam vulputate diam nec tempor bibendium. Donect iuctus augue eget malesuada uttrices. Phasellus turpis est, posuere sit amet dapibus ut facilisis sed est.</p>
+        </sidebar>
+        <content>
+            <h2>My article</h2>
+            <p>Duis fells orc: Durinar id metus ut. rutrum luctus orcI Cras porteor imperdiel nunc. at ultricies fetus toteel st amelSed auctor cursus massa pond Infeger ligulapaum, Thistique sit amet oldi vet vrend egesus Would Culbkur vehiculd leeus neque, ac othare ex tidiesuada et In vilde Aenean linibus solicitud n eros pharetta conque bus omare egestas auque ut luctus Proin blandit quam nee lacus varius commodo et a urna Ut ke omare felis, eget fermentum salen</p>
+            <p>Nam vuloutate dam nec tempor bibendum. Donec luctus augue eget facilists sed est Nam id risus quis ante semper consectetur eget al guam fem Vivamus Insuque rut dolors see prebum metus suscio vet Abuns utricles lectus sed loborts tinibus Vivamus eu uma eget velt cursus viverra holoque penavels el mognis dis paunch monies. sesseur no culus mus</p>
+        </content>
+        <footer>
+            <span>Contact me@mysite.com</span>
+        </footer>
+    </body>
+</html>

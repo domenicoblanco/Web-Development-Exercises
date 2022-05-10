@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Esercizio 1</title>
+    </head>
+    <body>
+        <h2>Esercizi</h2>
+        <ol>
+            <li>
+                <table border="1" width="300">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;Name:</td>
+                            <td>&nbsp;Mario Rossi</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top">&nbsp;Email:</td>
+                            <td>&nbsp;mario@telecom.com</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;mrossi@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table border="1" width="300">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;Name:</td>
+                            <td>&nbsp;Luigi Mario</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top">&nbsp;Email:</td>
+                            <td>&nbsp;luigi@nintendo.it</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;ml@nintendo.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li><br>
+            <li>
+                <table border="1" width="300">
+                    <tr>
+                        <td colspan="3" align="center">Title</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;A</td>
+                        <td>&nbsp;C</td>
+                        <td>&nbsp;E</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;B</td>
+                        <td>&nbsp;D</td>
+                        <td>&nbsp;F</td>
+                    </tr>
+                </table>
+                <br>
+                <table border="1" width="300">
+                    <tr>
+                        <td rowspan="3">&nbsp;Title</td>
+                        <td>&nbsp;A</td>
+                        <td>&nbsp;D</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;B</td>
+                        <td>&nbsp;E</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;C</td>
+                        <td>&nbsp;F</td>
+                    </tr>
+                </table>
+            </li><br>
+            <li>
+                <table border="1" width="400">
+                    <tr>
+                        <td colspan="3">&nbsp;Title<br>&nbsp;</td>
+                        <td valign="top">&nbsp;A</td>
+                        <td valign="top">&nbsp;B</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">&nbsp;C</td>
+                        <td align="center">D<br>&nbsp;</td>
+                        <td valign="top" align="center">E</td>
+                        <td valign="top" align="center">F</td>
+                        <td valign="top">&nbsp;G</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;H<br>&nbsp;</td>
+                        <td colspan="2" valign="top" align="center">I</td>
+                        <td rowspan="2" valign="top">&nbsp;J</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;K<br>&nbsp;</td>
+                        <td valign="top">&nbsp;L</td>
+                        <td valign="top">&nbsp;M</td>
+                    </tr>
+                    <tr>
+                        <td valign="top">&nbsp;N</td>
+                        <td colspan="4" align="center">O<br>&nbsp;</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <p>Registrazione utente</p>
+                <table width="500">
+                    <tr>
+                        <td><small>&nbsp;Indirizzo email</small></td>
+                        <td><small>&nbsp;Conferma indirizzo e-mail</small></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Email" name="email" size="32"></td>
+                        <td><input type="text" placeholder="Email" name="confirmed_email" size="32"></td>
+                    </tr>
+                    <tr><td><hr color="white"></td></tr>
+                    <tr>
+                        <td><small>&nbsp;Password</small></td>
+                        <td><small>&nbsp;Conferma Password</small></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="Password" name="password" size="32"></td>
+                        <td><input type="password" placeholder="Password" name="confirm_password" size="32"></td>
+                    </tr>
+                </table>
+                <hr color="red" width="490" align="left">
+                <form>
+                    <table width="500">
+                        <tr><td><hr color="white"></td></tr>
+                        <tr>
+                            <td><small>&nbsp;Nome</small></td>
+                            <td><small>&nbsp;Secondo Nome</small></td>
+                            <td><small>&nbsp;Cognome</small></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Nome" name="name" ></td>
+                            <td><input type="text" placeholder="Secondo Nome" name="second_name" ></td>
+                            <td><input type="text" placeholder="Cognome" name="surname"></td>
+                        </tr>
+                        <tr><td><hr color="white"></td></tr>
+                        <tr>
+                            <td><small>&nbsp;Sesso</small></td>
+                            <td><small>&nbsp;Città ed indirizzo</small></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option selected>Maschio</option>
+                                    <option>Femmina</option>
+                                    <option>Possessore della Triforza</option>
+                                </select>
+                            </td>
+                            <td colspan="3"><input type="text" placeholder="Città ed Indirizzo" name="city_address" size="43"></td>
+                        </tr>
+                    </table>
+                    <hr color="red" width="490" align="left">
+                    <table width="500">
+                        <tr><td><hr color="white"></td></tr>
+                        <tr>
+                            <td width="5"></td>
+                            <td>
+                                <small>Interessi</small>
+                                <table border="1" width="225">
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="interests"> Videogame<br>
+                                            <input type="checkbox" name="interests"> Arte<br>
+                                            <input type="checkbox" name="interests" checked> Fotografia<br>
+                                            <input type="checkbox"name="interests" name="interests"> Alcool<br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <small>Sistema Utilizzato</small>
+                                <table border="1" width="225">
+                                    <tr>
+                                        <td>
+                                            <input name="os" type="radio" name="os"> Microsoft Windows<br>
+                                            <input name="os" type="radio" name="os"> Linux<br>
+                                            <input name="os" type="radio" name="os" checked> MacOS<br>
+                                            <input name="os" type="radio" name="os"> Microsoft DOS<br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr color="red" width="490" align="left">
+                    <hr color="white">
+                    <table width="500">
+                        <tr>
+                            <td colspan="2" align="center">Accetti le condizioni?</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <hr color="white">
+                                <input type="checkbox" name="conditions"> Accetto
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="380"></td>
+                            <td colspan="2">
+                                <hr color="white">
+                                <input type="submit" value="Registrati" name="register">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </li>
+        </ol>
+    </body>
+</html>
